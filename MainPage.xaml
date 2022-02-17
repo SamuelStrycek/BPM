@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BPM.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label 
+            x:Name="bpmLabel"
+            Grid.Row="1"
+            Text="0"
+            HorizontalOptions="Center"
+            FontSize="Header"/>
+        <Button Text="TAP"
+                Grid.Row="2"
+                WidthRequest="200"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"/>
+    </Grid>
+
+</ContentPage>
